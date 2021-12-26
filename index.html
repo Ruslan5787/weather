@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="weather">
+      <div class="weather__content">
+         <div class="weather__content-top">
+            <form class="weather__form" action="">
+               <input type="text" class="weather__input" placeholder="aktobe">
+               <button class="weather__btn"></button>
+            </form>
+         </div>
+         <div class="weather__info">
+            <div class="weather__left">
+               <div class="weather__tabs">
+                  <div class="weather__tab tab-active" id="now">
+                     <div class="weather__tab--first">
+                        <div class="weather__tab-degrees">14°</div>
+                        <div class="weather__tab-img">
+                           <img src="img/cloud.png" alt="">
+                        </div>
+                        <div class="weather__tab-bottom tab-bottom">
+                           <div class="tab__name">aktobe</div>
+                           <button class="tab-bottom__btn tab-svg">
+                              <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                                 <path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.5 1C15.0556 1 12.8556 2.7875 12 5.125C11.1444 2.7875 8.94444 1 6.5 1C3.44444 1 1 3.6125 1 7.1875C1 12 5.27778 16.125 12 23C18.7222 16.125 23 12 23 7.1875C23 3.6125 20.5556 1 17.5 1Z"
+                                    stroke-width="2" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="weather__tab" id="details">
+                     <div class="tab__name tab__name--twice">aktobe</div>
+                     <ul class="weather__tab-list">
+                        <li class="weather__tab-item">Temperature: <span id="temperature">14</span></li>
+                        <li class="weather__tab-item">Feels like: <span id="feels like">10</span></li>
+                        <li class="weather__tab-item">Weather: <span id="weather">Clouds</span></li>
+                        <li class="weather__tab-item">Sunrise: <span id="sunrise">03:21</span></li>
+                        <li class="weather__tab-item">Sunset: <span id="sunset">18:54</span></li>
+                     </ul>
+                  </div>
+                  <div class="weather__tab" id="forecast">
+                     <div class="tab__name tab__name-forecast">aktobe</div>
+                     <div class="weather__tab-cards tab-cards">
+                     </div>
+                  </div>
+               </div>
+               <div class="weather__tabs-btns">
+                  <button class="weather__tabs-btn btn-active" id="now">now</button>
+                  <button class="weather__tabs-btn" id="details">details</button>
+                  <button class="weather__tabs-btn btn-forecast" id="forecast">forecast</button>
+               </div>
+            </div>
+            <div class="weather__right">
+               <h2 class="weather__right-title">added locations:</h2>
+               <div class="weather__right-list"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script type="module" src="js/main.js"></script>
+   <script type="module" src="js/tabs.js"></script>
+</body>
+
+</html>
