@@ -1,6 +1,6 @@
-export { UI }
+export { UI_COMPONENTS }
 
-const UI = {
+const UI_COMPONENTS = {
    FORM: document.querySelector('.weather__form'),
    INPUT: document.querySelector('.weather__input'),
    FAVORITE_CITY_BTN: document.querySelector('.tab-bottom__btn'),

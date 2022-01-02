@@ -1,6 +1,6 @@
-import { UI } from "./view.js";
+import { UI_COMPONENTS } from "./view.js";
 
-UI.TABS_BTNS.forEach(btn => {
+UI_COMPONENTS.TABS_BTNS.forEach(btn => {
    btn.addEventListener('click', () => {
       changeBtnClass(btn)
       changeTabClass(btn)
@@ -8,7 +8,7 @@ UI.TABS_BTNS.forEach(btn => {
 });
 
 function changeBtnClass(elem) {
-   for (const btn of UI.TABS_BTNS) {
+   for (const btn of UI_COMPONENTS.TABS_BTNS) {
       btn.classList.remove('btn-active')
    }
    elem.classList.add('btn-active')
@@ -16,7 +16,7 @@ function changeBtnClass(elem) {
 function changeTabClass(elem) {
    const idBtn = elem.id
    const activeTab = document.getElementById(`${idBtn}`)
-   for (const tab of UI.TABS) {
+   for (const tab of UI_COMPONENTS.TABS) {
       tab.classList.remove('tab-active')
    }
    activeTab.classList.add('tab-active')
