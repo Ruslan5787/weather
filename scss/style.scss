@@ -131,23 +131,25 @@ a {
          justify-content: space-between;
          align-items: center;
          &:hover .weather__right-btn {
-            opacity: .9;
+            opacity: 0.9;
          }
       }
       &-btn {
-         background-image: url('../img/del.png');
+         background-image: url("../img/del.png");
          width: 15px;
          height: 15px;
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
          cursor: pointer;
-         opacity: .5;
-         transition: all .3s;
-
+         opacity: 0.5;
+         transition: all 0.3s;
       }
       &-list {
          padding: 35px 14px 15px;
+         p {
+            text-transform: capitalize;
+         }
          :not(:last-child) {
             margin-bottom: 8px;
          }

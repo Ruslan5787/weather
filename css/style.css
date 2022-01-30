@@ -107,7 +107,7 @@ a {
     justify-content: space-between;
     align-items: center; }
     .weather__right-block:hover .weather__right-btn {
-      opacity: .9; }
+      opacity: 0.9; }
   .weather__right-btn {
     background-image: url("../img/del.png");
     width: 15px;
@@ -116,10 +116,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    opacity: .5;
-    transition: all .3s; }
+    opacity: 0.5;
+    transition: all 0.3s; }
   .weather__right-list {
     padding: 35px 14px 15px; }
+    .weather__right-list p {
+      text-transform: capitalize; }
     .weather__right-list :not(:last-child) {
       margin-bottom: 8px; }
   .weather__right-item {
